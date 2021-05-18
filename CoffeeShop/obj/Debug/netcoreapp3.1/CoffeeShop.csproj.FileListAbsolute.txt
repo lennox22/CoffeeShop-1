@@ -147,3 +147,5 @@ C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\login.cshtml.g.cs
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\formreg.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserList.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Invalid.cshtml.g.cs

@@ -27,14 +27,35 @@ namespace CoffeeShop.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult formreg(string firstname, string lastname, string email, string password, string birthdate)
+        public IActionResult formreg(Member newuser)
         {
-            ViewData["FirstName"] = firstname;
-            ViewData["LastName"] = lastname;
-            ViewData["Email"] = email;
-            ViewData["Password"] = password;
-            ViewData["Birthdate"] = birthdate;
-            return View();
+            if (newuser.password != newuser.confirm)
+            {
+                message.error = "Please make sure to enter the exact password in the confirm password field.";
+                return RedirectToAction("Invalid");
+            }
+            else
+            {
+                foreach (Member usr in Member.AllUsers)
+                {
+                    if(usr.email == newuser.email)
+                    {
+                        message.error = "Please choose another email. This email has already been used.";
+                        return RedirectToAction("Invalid");
+                    }
+                }
+                Member.AllUsers.Add(newuser);
+                return RedirectToAction("UserList");
+
+            }
+        }
+        public IActionResult Invalid (Member invalid, string error)
+        {
+            return View(error);
+        }
+        public IActionResult UserList()
+        {
+            return View(Member.AllUsers);
         }
         public IActionResult Privacy()
         {

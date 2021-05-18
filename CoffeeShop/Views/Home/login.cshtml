@@ -8,22 +8,103 @@
 <br />
 <form method="post" action="/home/formreg">
 
-    First Name:
-    <input type="text" name="firstname" />
-    <br />
-    Last Name:
-    <input type="text" name="lastname" />
-    <br />
-    Email:
-    <input type="text" name="email" />
-    <br />
-    Password:
-    <input type="password" name="password" />
-    <br />
-    Birthdate:
-    <input type="date" name="birthdate" />
-    <br />
+
     <input type="submit" />
 
-</form>
 
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    First Name:
+                </td>
+                <td>
+                    <input type="text" name="firstname" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    <input type="text" name="lastname" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="email" name="email" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" name="password" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Confirm Password:
+                </td>
+                <td>
+                    <input type="password" name="confirm" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Birthdate:
+                </td>
+                <td>
+                    <input type="date" name="birthdate" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Coffee Interest:
+                </td>
+                <td>
+                    <input type="radio" name="interest" value="8" required/>I can see the 4th dimension (caffeine).
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="7"/>I have a cupboard of mugs.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="6"/>I know too many coffee facts.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="5"/>Sometimes I make a full pot.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="4"/>A cup a day maybe to wake up.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="3"/>If someone else makes it I may have a cup.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="2"/>I drink tea (pretentiously or not).</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="1"/>I've developed personal fusion and hense don't need caffeine.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="interest" value="0"/>I only take in liquids when it rains. I may be a plant.</td>
+            </tr>
+        </tbody>
+    </table>
+    <input id="subscribe" type="checkbox" name="subscribe" value="true"/>Check this to be added to the coffeePress.<br />
+    <input type="hidden" value="false" name="subscribe" />
+    <input type="submit"/>
+</form>

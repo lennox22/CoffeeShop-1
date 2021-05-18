@@ -1,0 +1,52 @@
+﻿@model List<Member>
+@{
+    ViewData["Title"] = "UserList";
+}
+
+<h1>UserList</h1>
+
+<fieldset>
+    <table style="text-align: center">
+        <tbody>
+            <tr>
+                <td>User's name</td>
+                <td> | </td>
+                <td>Email address</td>
+                <td> | </td>
+                <td>Date of Birth</td>
+                <td> | </td>
+                <td>Interest Level</td>
+                <td> | </td>
+                <td>On Email list</td>
+            </tr>
+            @foreach (Member user in Model)
+            {
+
+                <tr style="border-top:1px solid black">
+                    <td>@user.firstname @user.lastname</td>
+                    <td> | </td>
+                    <td>@user.email</td>
+                    <td> | </td>
+                    <td>@user.birthdate</td>
+                    <td> | </td>
+                    <td>@user.interest</td>
+                    <td> | </td>
+
+                    @if (@user.subscribe)
+                    {
+                        <td>Yes</td>
+                    }
+                    else
+                    {
+                        <td>No</td>
+                    }
+
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</fieldset>
+
+
