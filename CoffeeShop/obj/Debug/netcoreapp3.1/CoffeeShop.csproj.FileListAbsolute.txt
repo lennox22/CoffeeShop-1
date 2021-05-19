@@ -149,3 +149,17 @@ C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\formreg.cshtml.g.cs
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\UserList.cshtml.g.cs
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Invalid.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\Dapper.Contrib.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Detail.cshtml.g.cs

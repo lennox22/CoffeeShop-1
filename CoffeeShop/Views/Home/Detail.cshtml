@@ -1,0 +1,46 @@
+﻿@model product
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>@Model.Name</h1>
+<br />
+<br />
+A @Model.category
+<br />
+::@Model.Description::$@Model.Price::
+<br />
+<br />
+
+@if (Model.id == 1)
+{
+    <img src="~/images/coffee.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else if (Model.id == 2)
+{
+    <img src="~/images/tea.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else if (Model.id == 3)
+{
+    <img src="~/images/latte.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else if (Model.id == 4)
+{
+    <img src="~/images/espresso.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else if (Model.id == 5)
+{
+    <img src="~/images/fancytea.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else if (Model.id == 6)
+{
+    <img src="~/images/flatwhite.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else if (Model.id == 7)
+{
+    <img src="~/images/americano.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+}
+else
+            {
+<img src="~/images/coffeesplash.jpg" width="60%" ; style="align-content:center; margin-left:auto; margin-right:auto" />
+            }

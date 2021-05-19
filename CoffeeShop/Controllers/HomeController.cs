@@ -1,11 +1,13 @@
 ﻿using CoffeeShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Dapper.Contrib.Extensions;
 
 namespace CoffeeShop.Controllers
 {
@@ -20,7 +22,16 @@ namespace CoffeeShop.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            MySqlConnection db = new MySqlConnection("Server=localhost;Database=coffeehouse;Uid=root;Password=abc123");
+            List<product> menu = db.GetAll<product>().ToList();
+            return View(menu);
+        }
+        public IActionResult Detail(int id)
+        {
+            MySqlConnection db = new MySqlConnection("Server=localhost;Database=coffeehouse;Uid=root;Password=abc123");
+            product item = db.Get<product>(id);
+
+            return View(item);
         }
         public IActionResult login()
         {

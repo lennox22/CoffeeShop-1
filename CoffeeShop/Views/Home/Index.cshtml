@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<product>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -8,14 +9,34 @@
     <h1 class="display-4">Where Have You Bean?</h1>
     <p>Now that you are here,  <a href="home/login">CLICK HERE</a> to register for our new site.</p>
     <br />
+    <h1 style="font:80%">Menu</h1>
+    <br />
+    <table style="align-content:center; margin-left:auto; margin-right:auto">
+        <tbody>
+            <tr style="border-bottom:1px solid black">
+                <td style="font:bold; text-align:left">Drinks</td>
+                <td style="color: burlywood">-------</td>
+                <td style="font:bold; text-align:right">Price</td>
+            </tr>
+           
+
+    @foreach (product item in Model)
+    {
+        <tr>
+            <td style="text-align:left"><a href="/home/detail/@item.id">@item.Name</a></td>
+            <td style="color: burlywood">-------</td>
+            <td style="text-align:right">$@item.Price</td>
+        </tr>
+    }
+        </tbody>
+    </table>
     <br />
     <br />
-    
     <table align="center">
         <tbody>
             <tr>
                 <td>
-                    <img src="images/coffeesplash.jpg" alt="Coffee in a cup on a wooden barrel" width="100%"/> 
+                    <img src="images/coffeesplash.jpg" alt="Coffee in a cup on a wooden barrel" width="70%"/> 
                 </td>
             </tr>
         </tbody>
