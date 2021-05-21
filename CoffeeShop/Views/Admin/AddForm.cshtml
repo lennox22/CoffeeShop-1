@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "AddForm";
+}
+
+<h1>Add to the Menu</h1>
+<br />
+<br />
+<form method="post" action="/admin/add">
+    <input type="submit" /><br /><br />
+    <table>
+        <tbody>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="Name" required /></td>
+            </tr>
+            <tr>
+                <td>Price: </td>
+                <td><input type="text" name="Price" required /></td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td><input type="text" name="Description" required /></td>
+            </tr>
+            <tr>
+                <td>Category: </td>
+                <td>
+                    <select id="category" name="category" required>
+                        @foreach (product prod in ViewBag.categories)
+                        {
+                            <option value="@prod.category">@prod.category</option>
+
+                        }
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br /><br />
+    <input type="submit" />
+</form>

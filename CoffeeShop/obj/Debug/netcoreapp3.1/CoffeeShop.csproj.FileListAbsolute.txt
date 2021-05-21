@@ -163,3 +163,7 @@ C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Detail.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditForm.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddForm.cshtml.g.cs
+C:\Users\lbrown4\dev\Week 10\DevBuildLab10_2\CoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteForm.cshtml.g.cs

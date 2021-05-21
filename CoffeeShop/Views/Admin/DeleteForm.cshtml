@@ -1,0 +1,20 @@
+﻿@model product
+@{
+    ViewData["Title"] = "DeleteForm";
+}
+
+<h1>Delete Imminent</h1>
+<br />
+<br />
+
+<h2>Are you sure you want to delete @Model.Name from the menu?</h2>
+
+<form method="post" action="/admin/delete/@Model.id">
+    <input type="radio" name="delete" value="1" required /> Yes
+    <br />
+    <input type="radio" name="delete" value="0" /> No
+    <br />
+
+    <input type="submit" />
+</form>
+

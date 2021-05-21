@@ -1,0 +1,27 @@
+﻿@model List<product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Admin Mode Initiated</h1>
+<p>~Will eventually have to log in~</p>
+<br /><br /><br />
+<h2>Menu</h2><br />
+<table>
+    <tbody>
+        @foreach (product prod in Model)
+        {
+        <tr>
+            <td>@prod.Name</td>
+            <td style="color: burlywood"> --- </td>
+            <td><a href="/admin/editform/@prod.id"><button>EDIT</button></a></td>
+            <td style="color: burlywood"> --- </td>
+
+            <td><a href="/admin/delete/@prod.id"><button>DELETE</button></a></td>
+        </tr>
+        }
+    </tbody>
+</table>
+<br /><br />
+<a href="/admin/addform"><button>NEW ITEM</button></a>
+
